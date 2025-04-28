@@ -1,5 +1,5 @@
 const Task = require('../models/Task');
-const { validationResult } = require('express-validator');
+const { validationResult, body } = require('express-validator');
 
 // GET /api/tasks
 exports.getAllTasks = async (req, res) => {
@@ -12,21 +12,28 @@ exports.getAllTasks = async (req, res) => {
 };
 
 // POST /api/tasks
-exports.createTask = async (req, res) => {
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    return res.status(400).json({ errors: errors.array() });
-  }
+exports.createTask = [
+  // Add validation for required fields
+  body('title').not().isEmpty().withMessage('Title is required'),
+  body('description').not().isEmpty().withMessage('Description is required'),
+  body('status').not().isEmpty().withMessage('Status is required'),
+  
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
 
-  try {
-    const { title, description, status } = req.body;
-    const task = new Task({ title, description, status });
-    await task.save();
-    res.status(201).json(task);
-  } catch (err) {
-    res.status(500).json({ error: 'Server error' });
-  }
-};
+    try {
+      const { title, description, status } = req.body;
+      const task = new Task({ title, description, status });
+      await task.save();
+      res.status(201).json(task);
+    } catch (err) {
+      res.status(500).json({ error: 'Server error' });
+    }
+  },
+];
 
 // PUT /api/tasks/:id
 exports.updateTask = async (req, res) => {

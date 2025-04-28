@@ -33,5 +33,13 @@
     "mongodb-memory-server": "^10.1.4",
     "nodemon": "^3.1.9",
     "supertest": "^7.1.0"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/routes/",
+      "/config/",
+      "/models/"
+    ]
   }
 }

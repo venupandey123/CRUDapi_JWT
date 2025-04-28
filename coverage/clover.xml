@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1745814857064" clover="3.2.0">
-  <project timestamp="1745814857064" name="All files">
-    <metrics statements="120" coveredstatements="106" conditionals="18" coveredconditionals="16" methods="11" coveredmethods="8" elements="149" coveredelements="130" complexity="0" loc="120" ncloc="120" packages="6" files="9" classes="9"/>
+<coverage generated="1745817867079" clover="3.2.0">
+  <project timestamp="1745817867079" name="All files">
+    <metrics statements="82" coveredstatements="78" conditionals="16" coveredconditionals="16" methods="8" coveredmethods="8" elements="106" coveredelements="102" complexity="0" loc="82" ncloc="82" packages="3" files="4" classes="4"/>
     <package name="nodejs_assignment">
       <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.js" path="C:\Users\venup\OneDrive\Desktop\Nodejs_Course\nodejs_assignment\app.js">
@@ -24,20 +24,6 @@
         <line num="50" count="2" type="stmt"/>
         <line num="51" count="2" type="stmt"/>
         <line num="53" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="nodejs_assignment.config">
-      <metrics statements="8" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="db.js" path="C:\Users\venup\OneDrive\Desktop\Nodejs_Course\nodejs_assignment\config\db.js">
-        <metrics statements="8" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
       </file>
     </package>
     <package name="nodejs_assignment.controllers">
@@ -117,54 +103,6 @@
         <line num="14" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="nodejs_assignment.models">
-      <metrics statements="14" coveredstatements="9" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="Task.js" path="C:\Users\venup\OneDrive\Desktop\Nodejs_Course\nodejs_assignment\models\Task.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-      </file>
-      <file name="User.js" path="C:\Users\venup\OneDrive\Desktop\Nodejs_Course\nodejs_assignment\models\User.js">
-        <metrics statements="11" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="27" count="3" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="nodejs_assignment.routes">
-      <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="authRoutes.js" path="C:\Users\venup\OneDrive\Desktop\Nodejs_Course\nodejs_assignment\routes\authRoutes.js">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="27" count="2" type="stmt"/>
-        <line num="49" count="2" type="stmt"/>
-        <line num="51" count="2" type="stmt"/>
-      </file>
-      <file name="taskRoutes.js" path="C:\Users\venup\OneDrive\Desktop\Nodejs_Course\nodejs_assignment\routes\taskRoutes.js">
-        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="44" count="2" type="stmt"/>
-        <line num="74" count="2" type="stmt"/>
-        <line num="95" count="2" type="stmt"/>
-        <line num="97" count="2" type="stmt"/>
       </file>
     </package>
   </project>
